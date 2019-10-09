@@ -1,0 +1,85 @@
+{{define "base.html"}}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/fonts/beyond_the_mountains-webfont.css" type="text/css"/>
+    <link rel="stylesheet" href="static/plugin-frameworks/swiper.css" />
+    <link rel="stylesheet" href="static/fonts/ionicons.css" />
+    <link rel="stylesheet" href="static/common/styles.css" />
+    <title>{{template "title" .}}</title>
+  </head>
+  <body>
+      <header>
+        <div class="container">
+            <a class="logo" href=""><img src="static/images/heading_logo.png" alt="logo"><b style="font-size:35px; font-family:Georgia;">
+            Arikanami's </b> </a>
+            <div class="right-area">
+                <h6><a class="plr-20 color-white btn-fill-primary" href="#">ORDER : +62 321 321 3213</a></h6>
+            </div>
+            <a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
+
+            <ul class="main-menu font-mountainsre" id="main-menu">
+                <li><a href="#">HOME </a></li>
+                <li><a href="#">ABOUT US </a></li>
+                <li><a href="#">SERVICES </a></li>
+                <li><a href="#">CONTACT </a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </header>
+
+    {{template "body" .}}
+
+    <footer class="pb-50 pt-70 pos-relative">
+      <div class="pos-top triangle-bottom"></div>
+      <div class="container-fluid">
+        <a href="#"><img src="static/images/heading_logo.png" alt="logo" width="30" height="50"></a>
+          <div class="pt-30">
+            <p class="underline-secondary"><b>Address : </b></p>
+            <p>Jalan Kemerdekaan Indonesia</p>
+          </div>
+
+          <div class="pt-30">
+            <p class="underline-secondary"><b>Phone : </b></p>
+            <a href="tel:+62 321 321 3213">+62 321 321 3213</a>
+          </div>
+
+          <div class="pt-30">
+            <p class="underline-secondary"><b>Email : </b></p>
+            <a href="mailto:arikanami@gmail.com">arikanamis@gmail.com</a>
+          </div>
+
+          <ul class="icon mt-30">
+            <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
+            <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+            <li><a href="#"><i class="ion-social-dribbble-outline"></i></a></li>
+            <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+            <li><a href="#"><i class="ion-social-vimeo"></i></a></li>
+          </ul>
+
+          <p class="color-light font-9 mt-50 mt-sm-30">
+            Copyright $copy;<script>document.write(new Date().getFullYear());</script> All right reserved
+          </p>
+      </div>
+    </footer>
+
+
+
+
+    
+    <script src="static/common/script.js"></script>
+    <script src="static/plugin-frameworks/swiper.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+{{end}}

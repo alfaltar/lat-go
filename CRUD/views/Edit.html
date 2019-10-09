@@ -1,0 +1,12 @@
+{{ define "Edit" }}
+  {{ template "_header" }}
+    {{ template "Menu" }} 
+   <h2>Edit Name and City</h2>  
+    <form method="POST" action="update">
+      <input type="hidden" name="uid" value="{{ .Id }}" />
+      <label> Nama </label><input type="text" name="name" value="{{ .Nama }}"  /><br />
+      <label> Kota </label><input type="text" name="city" value="{{ .Kota }}"  /><br />
+      <input type="submit" value="Save user" />
+    </form><br />    
+  {{ template "_footer" }}
+{{ end }}
